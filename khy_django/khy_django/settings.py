@@ -30,7 +30,19 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+BATON = {
+    'SITE_HEADER': 'KHY_백오피스',  # site_header
+    'SITE_TITLE': 'KHY_백오피스',
+    'INDEX_TITLE': 'KHY_관리자페이지',  # index_title
+    'SUPPORT_HREF': 'https://github.com/khy0425',
+    'COPYRIGHT': 'copyright © 2021 KHY',
+    'POWREED_BY': '<a href = "https://github.com/khy0425">KHY_Github</a>',
+    'MENU_TITLE': 'KHY'
+}
+
+
 INSTALLED_APPS = [
+    'baton',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,7 +53,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'khyuser',
     'order',
-    'product'
+    'product',
+
+    'baton.autodiscover'
 ]
 
 MIDDLEWARE = [
