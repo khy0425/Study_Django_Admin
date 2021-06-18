@@ -51,9 +51,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'rest_framework',
-    'khyuser',
-    'order',
-    'product',
+    'khyuser.apps.KhyuserConfig',
+    'order.apps.OrderConfig',
+    'product.apps.ProductConfig',
 
     'baton.autodiscover'
 ]
